@@ -1,0 +1,45 @@
+.aside_menu {
+    /*   border:1px solid black; */
+    position: fixed;
+    min-width: 296px;
+    min-height: 100vh;
+    font-family: "Lato", sans-serif;
+    font-weight: $font-weight-bold;
+}
+.logo a {
+    display: block;
+    background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/2b326fe971cd296bd54667a9b4a63c4b0f19fab3/week5/logo-ANSWER.svg")
+        no-repeat;
+    @include hide-text;
+}
+.menu ul a {
+    color: $gray-900;
+    &:hover {
+        background: $gray-200;
+        // color: $gray-900;
+    }
+}
+
+.nav-link {
+    position: relative;
+}
+.nav-link.active::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 4px;
+    height: 32px;
+    border-left: 4px solid #198754;
+}
+.material-icons {
+    font-size: $font-size-lg;
+}
+.icon_block {
+    width: 24px;
+    height: 24px;
+}
+
+.userblock img {
+    width: 40px;
+    height: 40px;
+}

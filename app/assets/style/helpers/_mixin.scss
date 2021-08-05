@@ -1,0 +1,14 @@
+
+
+
+
+
+
+
+
+//圖片取代文字
+@mixin hide-text{ 
+	text-indent:130%;
+	white-space:nowrap;
+	overflow:hidden;
+}
